@@ -35,6 +35,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 button {
     background-color: #18181E;
@@ -133,7 +134,16 @@ input[type="checkbox"]:disabled:after {
         width: 100%;
     }
 }
-
+@media only screen and (max-width: 600px) {
+    button:hover{
+        border: 1px solid #DEC79B;
+        background-color: #18181E;
+        color:  #DEC79B;
+    }
+    input[type="checkbox"]:hover {
+        background: none;
+    }
+}
 @media (max-width: 500px) {
     .title {
         font-size: 35px;
