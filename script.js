@@ -7,24 +7,28 @@ $(function () {
     let counter = 0;
 
 //Adding button event
-    $btnAdd.on('click',function (e) {
+    $btnAdd.on('click', function (e) {
         e.preventDefault();
         counter += 1;
-        const $listEl= $(`<li>Task ${counter}</li>`);
-        const $checkBox= $(`<label class="checkbox-container"><input type="checkbox"><span class="check"></span></label>`);
+        const $listEl = $(`<li>Task ${counter}</li>`);
+        const $checkBox = $(`<label class="checkbox-container"><input type="checkbox"><span class="check"></span></label>`);
+        //Checkbox event
+        $checkBox.find('input').on('click', function (e) {
+            $(this).parents('li').toggleClass('checked')
+        });
         $listEl.append($checkBox);
         $list.append($listEl);
     });
 
 //Remove button event
-    $btnRemove.on('click',function (e) {
+    $btnRemove.on('click', function (e) {
         e.preventDefault();
-        counter>=1?counter -= 1:null;
+        counter >= 1 ? counter -= 1 : null;
         $list.find('li').last().remove()
     });
 
 //Clear button event
-    $btnClear.on('click',function (e) {
+    $btnClear.on('click', function (e) {
         e.preventDefault();
         counter = 0;
         $list.empty()
