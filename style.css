@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arapey:400i|Grenze:300i|Old+Standard+TT:400i|Sorts+Mill+Goudy:400i|Volkhov:400i&display=swap');
 /*font-family: 'Open Sans', sans-serif;*/
+
 
 *{
     margin: 0;
@@ -24,8 +26,17 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
+.title{
+    font-family: 'Grenze', serif;
+    /*font-family: 'Arapey', serif;*/
+    /*font-family: 'Sorts Mill Goudy', serif;*/
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 90px;
+}
 button{
-    background-color: inherit;
+    background-color: #18181E;
     border: 1px solid #DEC79B;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -35,8 +46,13 @@ button{
     outline: none;
     font-size: 20px;
     text-transform: uppercase;
-    font-weight: 300;
     cursor: pointer;
+    transition: .3s;
+}
+button:hover{
+    border: 1px solid #18181E ;
+    background-color: #DEC79B;
+    color:#18181E ;
 }
 .clear-btn{
     margin-right:20px;
@@ -50,14 +66,62 @@ button{
     text-align: center;
 }
 li{
-    margin-bottom: 10px;
-    width: 100%;
-    border: 1px solid white;
+    position: relative;
+    margin: 0 auto 10px auto;
+    width: 80%;
+    border: 1px solid #DEC79B;
     padding: 10px;
-    background-color:#DEC79B;
-    /*box-shadow: 0 0 5px -1px #fff;*/
-    border-radius: 5px;
-    color: white;
-    text-transform: uppercase;
+    /*background-color:#DEC79B;*/
+    border-radius: 25px;
+    /*color: white;*/
+    /*text-transform: uppercase;*/
     font-size: 20px;
+}
+.checkbox-container{
+    position: absolute;
+    left: 0;
+    transform: translate(100%,3%);
+}
+input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: #18181E;
+    height:25px;
+    width: 25px;
+    border: 1px solid #DEC79B;
+    border-radius: 25px;
+}
+
+input[type="checkbox"]:checked {
+    background: #DEC79B;
+    color: #18181E;
+}
+
+input[type="checkbox"]:hover {
+    background: #DEC79B;
+}
+
+
+input[type="checkbox"]:after {
+    content: '';
+    position: relative;
+    left: 40%;
+    top: 15%;
+    width: 20%;
+    height: 50%;
+    border: solid #18181E;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+input[type="checkbox"]:disabled:after {
+    border-color: #7b7b7b;
 }

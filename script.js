@@ -11,6 +11,8 @@ $(function () {
         e.preventDefault();
         counter += 1;
         const $listEl= $(`<li>Task ${counter}</li>`);
+        const $checkBox= $(`<label class="checkbox-container"><input type="checkbox"><span class="check"></span></label>`);
+        $listEl.append($checkBox);
         $list.append($listEl);
     });
 
