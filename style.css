@@ -138,12 +138,16 @@ input[type="checkbox"]:disabled:after {
 
 /*Media*/
 @media (max-width: 768px) {
+
     .title {
         font-size: 60px;
     }
+    button{
+        width: 30%;
+    }
 
-    button {
-        font-size: 13px;
+    li{
+        width: 100%;
     }
 
 }
@@ -155,6 +159,10 @@ input[type="checkbox"]:disabled:after {
 
     button {
         font-size: 13px;
+        width: 30%;
+    }
+    li{
+        width: 100%;
     }
 
 
