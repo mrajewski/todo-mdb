@@ -8,7 +8,6 @@
     font-family: 'Open Sans', sans-serif;
     color: #DEC79B;
 }
-
 body {
     background-color: #18181E;
     display: flex;
@@ -16,7 +15,6 @@ body {
     height: 100vh;
 
 }
-
 .app-container {
     display: flex;
     align-items: center;
@@ -25,7 +23,6 @@ body {
     margin: 0 auto;
 
 }
-
 .title {
     font-family: 'Grenze', serif;
     margin-top: 20px;
@@ -34,13 +31,11 @@ body {
     font-size: 90px;
 
 }
-
 .btn-container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
 button {
     background-color: #18181E;
     border: 1px solid #DEC79B;
@@ -55,25 +50,21 @@ button {
     cursor: pointer;
     transition: .3s;
 }
-
 button:hover {
     border: 1px solid #18181E;
     background-color: #DEC79B;
     color: #18181E;
 }
-
 .clear-btn {
     margin-right: 20px;
     margin-left: 20px;
 }
-
 .list-container {
     width: 100%;
     min-height: 400px;
     list-style: none;
     text-align: center;
 }
-
 li {
     position: relative;
     margin: 0 auto 10px auto;
@@ -83,12 +74,10 @@ li {
     border-radius: 25px;
     font-size: 20px;
 }
-
 li.checked {
     color: #18181E;
     background-color: #DEC79B;
 }
-
 input[type="checkbox"] {
     position: absolute;
     left: 0;
@@ -105,16 +94,13 @@ input[type="checkbox"] {
     border-radius: 25px;
 
 }
-
 input[type="checkbox"]:checked {
     background: #DEC79B;
     border-color: #18181E;
 }
-
 input[type="checkbox"]:hover {
     background: #DEC79B;
 }
-
 input[type="checkbox"]:after {
     content: '';
     position: relative;
@@ -127,18 +113,15 @@ input[type="checkbox"]:after {
     transform: rotate(45deg);
     display: none;
 }
-
 input[type="checkbox"]:checked:after {
     display: block;
 }
-
 input[type="checkbox"]:disabled:after {
     border-color: #7b7b7b;
 }
 
 /*Media*/
 @media (max-width: 768px) {
-
     .title {
         font-size: 60px;
     }
@@ -149,7 +132,6 @@ input[type="checkbox"]:disabled:after {
     li{
         width: 100%;
     }
-
 }
 
 @media (max-width: 500px) {
@@ -164,7 +146,4 @@ input[type="checkbox"]:disabled:after {
     li{
         width: 100%;
     }
-
-
-
 }
