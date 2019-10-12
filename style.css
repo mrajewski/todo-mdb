@@ -12,7 +12,7 @@ body {
     background-color: #18181E;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 
 }
 .app-container {
@@ -40,7 +40,6 @@ body {
 button {
     background-color: #18181E;
     border: 1px solid #DEC79B;
-    margin-bottom: 30px;
     margin-top: 30px;
     border-radius: 40px;
     width: 25%;
