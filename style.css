@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color:#DEC79B;
+}
+body{
+    background-color: #18181E;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    height: 100vh;
+
 }
 .app-container{
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     flex-direction: column;
     max-width: 1200px;
@@ -13,14 +26,38 @@
 }
 button{
     background-color: inherit;
-    border: 1px solid black;
-    margin: 10px;
+    border: 1px solid #DEC79B;
+    margin-bottom: 30px;
+    margin-top: 30px;
     border-radius: 40px;
     width: 150px;
     height: 50px;
     outline: none;
     font-size: 20px;
     text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
 }
-.add-btn{
+.clear-btn{
+    margin-right:20px;
+    margin-left: 20px;
+}
+
+.list-container{
+    width: 100%;
+    min-height: 400px;
+    list-style: none;
+    text-align: center;
+}
+li{
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid white;
+    padding: 10px;
+    background-color:#DEC79B;
+    /*box-shadow: 0 0 5px -1px #fff;*/
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
 }
